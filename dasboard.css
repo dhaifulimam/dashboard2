@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #27374d;
+  color: white;
+  font-family: "poppins", Arial, Helvetica, sans-serif;
+}
+
+.content {
+  display: flex;
+  flex-basis: 100%;
+  flex-flow: row;
+}
+
+.my-navbar {
+  width: fit-content;
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  box-sizing: border-box;
+  background-color: #212a3e;
+  height: 100vh;
+  color: white;
+  padding: 1.5rem;
+  transition: ease-out 0.5s;
+  z-index: 99;
+}
+
+.my-navbar-off {
+  margin-left: calc(-217px - 1.5rem);
+  transition: ease-out 0.5s;
+}
+
+.button-toggle {
+  position: absolute;
+  right: 0;
+  top: 1.5rem;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.navbar-brand h1 {
+  font-size: 1.5rem;
+}
+
+.navbar-nav .nav-item .nav-link {
+  padding: 1rem;
+}
+
+.navbar-nav .nav-item .active {
+  background-color: rgb(136, 16, 249);
+  border-radius: 0.5rem;
+}
+
+.badge {
+  border-radius: 100%;
+  height: fit-content;
+  background-color: #f6ba6f;
+  color: black;
+}
+
+.profile {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 1rem;
+}
+
+.profile a {
+  text-decoration: none;
+  color: white;
+}
+
+.dropdown-profile a {
+  color: black;
+}
+
+main {
+  width: 100vw;
+  overflow: hidden;
+}
+.card {
+  margin-top: 1rem;
+  background-color: #212a3e;
+  color: #fff;
+}
+
+canvas {
+  margin-top: 1rem;
+  background-color: #212a3e;
+  padding: 1rem;
+  border-radius: 10px;
+  overflow: scroll;
+  width: 100%;
+}
+
+.side-right {
+  margin-right: 1rem;
+}
+
+.user {
+  margin-top: 2rem;
+  width: 16rem;
+}
+
+.card .list-group .list-group-item {
+  background-color: #212a3e;
+  color: #fff;
+}
+#btnToggleMobile {
+  display: none;
+}
+#btnToggleOnMobile {
+  display: none;
+}
+@media (max-width: 768px) {
+  #btnToggleOnMobile {
+    display: flex;
+  }
+  #btnToggleMobile {
+    display: flex;
+  }
+  #btnToggle {
+    display: none;
+  }
+  #btnToggleOn {
+    display: none;
+  }
+  .navbar-respons {
+    margin-left: calc(-217px - 1.5rem);
+  }
+  .my-navbar {
+    position: fixed;
+  }
+}
